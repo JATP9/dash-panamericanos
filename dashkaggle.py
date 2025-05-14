@@ -5,7 +5,7 @@ from pymongo import MongoClient
 import plotly.express as px
 
 # Conexión a MongoDB Atlas
-uri = "mongodb+srv://Countries:Country1@cluster0.0b8ol.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+uri = os.getenv("MONGO_URI")
 client = MongoClient(uri)
 db = client["Panamericanos"]
 collection = db["Medallistas"]
