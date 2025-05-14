@@ -3,6 +3,7 @@ from dash import html, dcc
 import pandas as pd
 from pymongo import MongoClient
 import plotly.express as px
+import os
 
 # Conexión a MongoDB Atlas
 uri = os.getenv("MONGO_URI")
